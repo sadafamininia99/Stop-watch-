@@ -4,5 +4,22 @@
         const minutes       = document.querySelector('.minutes');
         const seconds        = document.querySelector('.seconds');
 
+        //Functions👩🏼‍🦯👩🏼‍🦯
 
-     //ADD E
+        function startTimer(){
+
+        }
+
+        function stopTimer(){
+            
+        }
+
+        function resetTimer(){
+            
+        }
+
+        
+     //ADD EventListiner
+     startButton.addEventListener('click', startTimer);
+     stopButton.addEventListener('click', stopTimer);
+    resetButton.addEventListener('click',resetTimer);
