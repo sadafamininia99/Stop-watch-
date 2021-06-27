@@ -3,14 +3,20 @@ const stopButton = document.querySelector('[data-action="stop"]');
 const resetButton = document.querySelector('[data-action="reset"]');
 const minutes = document.querySelector(".minutes");
 const seconds = document.querySelector(".seconds");
-let timerTime = 0;
+let timerTime = 57;
 
 //interval
 
 setInterval(function () {
-    timerTime ++;
-    seconds.innerText =timerTime;
-    console.count("helooooo");
+    timerTime++;
+
+    const numOfMInutes = Math.floor(timerTime /60);
+    const numOfSeconds = timerTime % 60; 
+
+    console.log(numOfMInutes , numOfSeconds);
+
+    seconds.innerText =numOfSeconds;
+    // console.count("helooooo");
     },1000);
 
 //Functions👩🏼‍🦯👩🏼‍🦯
